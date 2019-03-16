@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>National ID Database</title>
+
+    {% load static %}
+    <script type="text/javascript" src="{% static "lib/js/jquery-3.3.1.min.js" %}"></script>
+</head>
+<body>
+<div style="text-align: center">
+    <h2>NID Validation Demo</h2>
+</div>
+
+<div style="margin-top: 20%; text-align: center">
+    <label for="nid_input">
+        NID <input type="text" name="nid_input" id="nid_input">
+    </label>
+    <input type="submit" id="nid_submit">
+</div>
+
+<br>
+<div style="text-align: center" id="nid_msg"></div>
+<script>
+    $('#nid_submit').click(function (e) {
+        e.preventDefault();
+        $.get('/api/nid/', {'nid': $('#nid_input').val()}, function (res) {
+            $('#nid_input').val('');
+            if (res.length) {
+                $('#nid_msg').css('color', 'green').text('Valid NID');
+            } else {
+                $('#nid_msg').css('color', 'red').text('Invalid NID!');
+            }
+        });
+    });
+</script>
+</body>
+</html>
