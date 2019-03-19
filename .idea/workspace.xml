@@ -87,13 +87,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/core/nid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="322">
+              <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#3223#4668#0#DjangoTemplate" />
+                <element signature="e#3247#3339#0#DjangoTemplate" />
+                <element signature="e#3344#3398#0#DjangoTemplate" />
+                <element signature="e#3461#3521#0#DjangoTemplate" />
+                <element signature="e#3526#3600#0#DjangoTemplate" />
+                <element signature="e#3605#3651#0#DjangoTemplate" />
+                <element signature="e#3656#3698#0#DjangoTemplate" />
+                <element signature="e#3703#3756#0#DjangoTemplate" />
+                <element signature="e#3761#3821#0#DjangoTemplate" />
+                <element signature="e#3826#3900#0#DjangoTemplate" />
+                <element signature="e#3905#3951#0#DjangoTemplate" />
+                <element signature="e#3956#3998#0#DjangoTemplate" />
+                <element signature="e#4003#4041#0#DjangoTemplate" />
+                <element signature="e#4046#4100#0#DjangoTemplate" />
+                <element signature="e#4105#4158#0#DjangoTemplate" />
+                <element signature="e#4163#4280#0#DjangoTemplate" />
+                <element signature="e#4285#4327#0#DjangoTemplate" />
+                <element signature="e#4332#4385#0#DjangoTemplate" />
+                <element signature="e#4390#4507#0#DjangoTemplate" />
+                <element signature="e#4512#4554#0#DjangoTemplate" />
+                <element signature="e#4559#4597#0#DjangoTemplate" />
+                <element signature="e#4602#4694#0#DjangoTemplate" />
+                <element signature="e#4699#4733#0#DjangoTemplate" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5607#5989#0#DjangoTemplate" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -297,7 +325,7 @@
       <workItem from="1552714102066" duration="10284000" />
       <workItem from="1552725722768" duration="910000" />
       <workItem from="1552895550376" duration="403000" />
-      <workItem from="1552899926532" duration="14107000" />
+      <workItem from="1552899926532" duration="15029000" />
     </task>
     <task id="LOCAL-00001" summary="some fixes">
       <created>1552726424621</created>
@@ -310,7 +338,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29082000" />
+    <option name="totallyTimeSpent" value="30004000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,13 +512,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/core/nid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="322">
+          <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#3223#4668#0#DjangoTemplate" />
+            <element signature="e#3247#3339#0#DjangoTemplate" />
+            <element signature="e#3344#3398#0#DjangoTemplate" />
+            <element signature="e#3461#3521#0#DjangoTemplate" />
+            <element signature="e#3526#3600#0#DjangoTemplate" />
+            <element signature="e#3605#3651#0#DjangoTemplate" />
+            <element signature="e#3656#3698#0#DjangoTemplate" />
+            <element signature="e#3703#3756#0#DjangoTemplate" />
+            <element signature="e#3761#3821#0#DjangoTemplate" />
+            <element signature="e#3826#3900#0#DjangoTemplate" />
+            <element signature="e#3905#3951#0#DjangoTemplate" />
+            <element signature="e#3956#3998#0#DjangoTemplate" />
+            <element signature="e#4003#4041#0#DjangoTemplate" />
+            <element signature="e#4046#4100#0#DjangoTemplate" />
+            <element signature="e#4105#4158#0#DjangoTemplate" />
+            <element signature="e#4163#4280#0#DjangoTemplate" />
+            <element signature="e#4285#4327#0#DjangoTemplate" />
+            <element signature="e#4332#4385#0#DjangoTemplate" />
+            <element signature="e#4390#4507#0#DjangoTemplate" />
+            <element signature="e#4512#4554#0#DjangoTemplate" />
+            <element signature="e#4559#4597#0#DjangoTemplate" />
+            <element signature="e#4602#4694#0#DjangoTemplate" />
+            <element signature="e#4699#4733#0#DjangoTemplate" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5607#5989#0#DjangoTemplate" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

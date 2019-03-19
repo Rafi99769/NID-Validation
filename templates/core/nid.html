@@ -63,8 +63,8 @@
                     <div class="col-md-12">
                         <div class="card-body">
                             <h5 class="card-title text-center">Search NID Information</h5>
-                            <div class="row">
-                                <div class="col-md-3"></div>
+                            {% comment %}<div class="row">
+                                                                <div class="col-md-3"></div>
                                 <div class="col-md-2">
                                     <div class="row">
                                         <div class="col-md">
@@ -85,15 +85,33 @@
                                         <div class="col-md"><input type="date" name="dob_input" id="dob_input"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-3"></div>
-                            </div>
+                                                                <div class="col-md-3"></div>
+                            </div>{% endcomment %}
                             <div class="row">
-                                <div class="col-md-3"></div>
+                                <div class="col-md-12">
+                                    <table id="search_table" style="margin: auto">
+                                        <tr>
+                                            <td style="padding: 10px">NID:</td>
+                                            <td><input type="text" name="nid_input" id="nid_input"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px">DoB:</td>
+                                            <td><input type="date" name="dob_input" id="dob_input"></td>
+                                        </tr>
+                                        <tr style="text-align: center">
+                                            <td colspan="2">
+                                                <input style="margin: auto" type="submit" id="nid_submit" class="btn-info" name="nid_submit">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                {% comment %}<div class="col-md-3"></div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-4">
                                     <input type="submit" id="nid_submit" class="btn-info" name="nid_submit">
                                 </div>
-                                <div class="col-md-3"></div>
+                                <div class="col-md-3"></div>{% endcomment %}
                             </div>
                         </div>
                     </div>
