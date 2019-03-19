@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from rest_framework import serializers, viewsets
 from rest_framework.authentication import BasicAuthentication
+from datetime import datetime
 
 from apps.core.models import NID
 
@@ -20,9 +21,15 @@ class NIDViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         nid = self.request.GET.get('nid')
-        qs = super().get_queryset()
-        if nid is not None:
+        dob = self.request.GET.get('dob')
+        qs = None
+        if nid and dob is not None:
+            qs = super().get_queryset()
+            # if nid is not None:
             qs = qs.filter(number=nid)
+            # if dob is not None:
+            dob = datetime.strptime(dob, '%Y-%m-%d').date()
+            qs = qs.filter(birth_date=dob)
         return qs
 
 

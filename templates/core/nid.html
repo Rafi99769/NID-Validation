@@ -2,36 +2,131 @@
 <html lang="en">
 <head>
     <title>National ID Database</title>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
     {% load static %}
+    <link href="{% static "lib/css/bootstrap.min.css" %}" rel="stylesheet">
     <script type="text/javascript" src="{% static "lib/js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "lib/js/bootstrap.min.js" %}"></script>
 </head>
 <body>
 <div style="text-align: center">
     <h2>NID Validation Demo</h2>
 </div>
 
-<div style="margin-top: 20%; text-align: center">
-    <label for="nid_input">
-        NID <input type="text" name="nid_input" id="nid_input">
-    </label>
-    <input type="submit" id="nid_submit">
-</div>
-
-<br>
-<div style="text-align: center" id="nid_msg"></div>
-<script>
-    $('#nid_submit').click(function (e) {
-        e.preventDefault();
-        $.get('/api/nid/', {'nid': $('#nid_input').val()}, function (res) {
-            $('#nid_input').val('');
-            if (res.length) {
-                $('#nid_msg').css('color', 'green').text('Valid NID');
-            } else {
-                $('#nid_msg').css('color', 'red').text('Invalid NID!');
-            }
+<div class="container" style="margin-top: 5%;">
+    <div class="row">
+        <div class="col-md"></div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <img src="{% static "image/person.png" %}" class="card-img" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</h5>
+                            <h5 class="card-title text-center text-success">Government of the Peoples Republic of Bangladesh</h5>
+                            <h5 class="card-title text-center"><span class="text-danger">National ID Card</span>/জাতীয় পরিচয় পত্র</h5>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-4">
+                                    <p class="card-text">Name: </p>
+                                    <p class="card-text">Fathers Name: </p>
+                                    <p class="card-text">Mothers Name: </p>
+                                    <p class="card-text">Date of Birth: </p>
+                                    <p class="card-text">ID NO: </p>
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="card-text" id="card_holder_name">Name: </p>
+                                    <p class="card-text" id="card_holder_father_name">Fathers Name: </p>
+                                    <p class="card-text" id="card_holder_mother_name">Mothers Name: </p>
+                                    <p class="card-text" id="card_holder_dob">Date of Birth: </p>
+                                    <p class="card-text" id="card_holder_nid">ID NO: </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <div class="row" style="margin-top: 5%; text-align: center"></div>
+    <div class="row">
+        <div class="col-md"></div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Search NID Information</h5>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-2">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p class="card-text">NID: </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p class="card-text">DoB: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md"><input type="text" name="nid_input" id="nid_input"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md"><input type="date" name="dob_input" id="dob_input"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <input type="submit" id="nid_submit" class="btn-info" name="nid_submit">
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md"></div>
+    </div>
+    <div style="text-align: center" id="nid_msg"></div>
+    <script>
+        $('#nid_submit').click(function (e) {
+            e.preventDefault();
+            $.get('/api/nid/', {'nid': $('#nid_input').val(), 'dob': $('#dob_input').val()}, function (res) {
+                $('#nid_input').val('');
+                $('#dob_input').val('');
+                if (res.length) {
+                    console.log(res);
+                    $('#nid_msg').css('color', 'green').text('Valid NID');
+                    $('#card_holder_name').text(res[0].name);
+                    $('#card_holder_father_name').text(res[0].fathers_name);
+                    $('#card_holder_mother_name').text(res[0].mothers_name);
+                    $('#card_holder_dob').text(res[0].birth_date);
+                    $('#card_holder_nid').text(res[0].number);
+                } else {
+                    $('#nid_msg').css('color', 'red').text('Invalid NID!');
+                    $('#card_holder_name').text('');
+                    $('#card_holder_father_name').text('');
+                    $('#card_holder_mother_name').text('');
+                    $('#card_holder_dob').text('');
+                    $('#card_holder_nid').text('');
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
