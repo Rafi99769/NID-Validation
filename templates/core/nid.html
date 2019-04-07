@@ -38,6 +38,7 @@
                                     <p class="card-text">Mothers Name: </p>
                                     <p class="card-text">Date of Birth: </p>
                                     <p class="card-text">ID NO: </p>
+                                    <p class="card-text">Customer ID: </p>
                                 </div>
                                 <div class="col-md-7">
                                     <p class="card-text" id="card_holder_name"></p>
@@ -45,6 +46,7 @@
                                     <p class="card-text" id="card_holder_mother_name"></p>
                                     <p class="card-text" id="card_holder_dob"></p>
                                     <p class="card-text" id="card_holder_nid"></p>
+                                    <p class="card-text" id="card_holder_customer_id"></p>
                                 </div>
                             </div>
                         </div>
@@ -121,6 +123,7 @@
         <div class="col-md"></div>
     </div>
     <div style="text-align: center" id="nid_msg"></div>
+</div>
     <script>
         $('#nid_submit').click(function (e) {
             e.preventDefault();
@@ -135,6 +138,7 @@
                     $('#card_holder_mother_name').text(res[0].mothers_name);
                     $('#card_holder_dob').text(res[0].birth_date);
                     $('#card_holder_nid').text(res[0].number);
+                    $('#card_holder_customer_id').text(res[0].customer_id);
                 } else {
                     $('#nid_msg').css('color', 'red').text('Invalid NID!');
                     $('#card_holder_name').text('');
@@ -142,6 +146,7 @@
                     $('#card_holder_mother_name').text('');
                     $('#card_holder_dob').text('');
                     $('#card_holder_nid').text('');
+                    $('#card_holder_customer_id').text('');
                 }
             });
         });

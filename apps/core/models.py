@@ -11,6 +11,7 @@ class NID(models.Model):
     address = models.TextField()
     blood_group = models.PositiveSmallIntegerField(choices=BLOOD_GROUPS, default=3)
     received_date = models.DateField()
+    customer_id = models.IntegerField(null=True)
 
     def __str__(self):
         return self.number
